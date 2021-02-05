@@ -15,7 +15,7 @@ struct ItemSelectionView : View {
             VStack {
                 List() {
                     
-                    Section(header: Text("All Items ".uppercased()) )
+                    Section(header: Text("ALL ITEMS") )
                     {
                         ForEach(self.dataSource.fetchedObjects) { item in
                             

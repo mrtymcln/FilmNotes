@@ -1,7 +1,6 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var isWhatsNewViewShowing = true
     @State private var selection = 1
     
     var body: some View {
@@ -50,11 +49,8 @@ struct ContentView: View {
             }
             .tag(5)
         }
-        .sheet(isPresented: $isWhatsNewViewShowing) {
         }
-        
     }
-}
 
 #if DEBUG
 struct ContentView_Previews : PreviewProvider {

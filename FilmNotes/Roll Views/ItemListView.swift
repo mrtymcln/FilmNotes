@@ -16,7 +16,7 @@ struct ItemListView : View {
                 
                 Section(header:
                             HStack {
-                                Text("film rolls".uppercased())
+                                Text("FILM ROLLS")
                                 Spacer()
                                 Image(systemName: (sortAscending ? "arrow.down" : "arrow.up"))
                                     .foregroundColor(.blue)

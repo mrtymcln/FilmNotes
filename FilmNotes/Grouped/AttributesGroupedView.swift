@@ -16,7 +16,7 @@ struct AttributesGroupedView: View {
                 
                 ForEach(self.dataSource.sections, id: \.name) { section in
                     
-                    Section(header: Text("Exposures on \(section.name)".uppercased()))
+                    Section(header: Text("EXPOSURES ON \(section.name)"))
                     {
                         ForEach(self.dataSource.objects(inSection: section)) { attribute in
                             

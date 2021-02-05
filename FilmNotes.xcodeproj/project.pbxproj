@@ -42,7 +42,6 @@
 		B06AB26D254DF10000F5601B /* Item+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06AB26C254DF10000F5601B /* Item+CoreDataProperties.swift */; };
 		B06AB272254DF11300F5601B /* Attribute+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06AB271254DF11300F5601B /* Attribute+CoreDataClass.swift */; };
 		B06AB277254DF12A00F5601B /* Attribute+CoreDataPropertie.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06AB276254DF12A00F5601B /* Attribute+CoreDataPropertie.swift */; };
-		B0A40728254E529000E921FD /* WhatsNewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A40727254E529000E921FD /* WhatsNewView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -85,7 +84,6 @@
 		B06AB276254DF12A00F5601B /* Attribute+CoreDataPropertie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Attribute+CoreDataPropertie.swift"; sourceTree = "<group>"; };
 		B06AB27C254DF17400F5601B /* FilmNotes.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FilmNotes.entitlements; sourceTree = "<group>"; };
 		B06AB285254DF2ED00F5601B /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
-		B0A40727254E529000E921FD /* WhatsNewView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WhatsNewView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,7 +155,6 @@
 			isa = PBXGroup;
 			children = (
 				B06AB1D0254DEBC400F5601B /* ContentView.swift */,
-				B0A40727254E529000E921FD /* WhatsNewView.swift */,
 			);
 			path = "Tab View";
 			sourceTree = "<group>";
@@ -354,7 +351,6 @@
 				B06AB26D254DF10000F5601B /* Item+CoreDataProperties.swift in Sources */,
 				B06AB248254DEE3D00F5601B /* EditSaveDoneButton.swift in Sources */,
 				B06AB225254DEDA200F5601B /* ListSelectionManager.swift in Sources */,
-				B0A40728254E529000E921FD /* WhatsNewView.swift in Sources */,
 				B06AB243254DEE2200F5601B /* AddButton.swift in Sources */,
 				B06AB277254DF12A00F5601B /* Attribute+CoreDataPropertie.swift in Sources */,
 				B06AB212254DED4A00F5601B /* AttributesGroupedView.swift in Sources */,

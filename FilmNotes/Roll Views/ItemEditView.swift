@@ -21,7 +21,7 @@ struct ItemEditView : View {
                          textOrder: self.$textOrder,
                          editMode: self.$editMode)
              
-            Section(header: Text("exposures_attributes".uppercased())) {
+            Section(header: Text("EXPOSURES_ATTRIBUTES")) {
                 ForEach(dataSource.loadDataSource(relatedTo: item)) { attribute in
                     
                     if self.editMode == .active {

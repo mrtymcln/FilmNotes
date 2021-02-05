@@ -9,7 +9,7 @@ struct ItemFormView: View {
     
     var body: some View {
         
-        Section(header: Text("roll_item".uppercased())) {
+        Section(header: Text("ROLL_ITEM")) {
             
             VStack {
                 HStack {

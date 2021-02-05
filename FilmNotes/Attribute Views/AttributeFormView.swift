@@ -7,11 +7,11 @@ struct AttributeFormView: View {
     
     var body: some View {
         
-            Section(header: Text("exposure_attribute".uppercased())) {
+            Section(header: Text("EXPOSURE_ATTRIBUTE")) {
                 
                 VStack {
                     HStack {
-                        Text("Exposure description")
+                        Text("Description")
                             .foregroundColor(.gray)
                         Spacer()
                     }

@@ -1,6 +1,6 @@
 # FilmNotes version 0.1 as of 05.01.21
 
-🎞 **FilmNotes** is an app for cataloguing your analouge film photography. Add a new **Roll (item)**, and enter notes for each **Exposure (attribute)** you take.
+**FilmNotes** is an app for cataloguing your analouge film photography. Add a new **Roll (item)**, and enter notes for each **Exposure (attribute)** you take.
 
 Requires Xcode 11 or later; iOS 13 or later; macOS 10.15 or later.
 
@@ -36,7 +36,5 @@ A TabView is used to display and edit the same CoreData database in several ways
 > The NavigationBarTitle shows ghosting from the previous NavigationBarTitle. Fixed by using the In-line style rather than Large style.
 
 > When reordering rows, the first Roll or Exposure in the list becomes Order 0.
-
-> The WhatsNewView is shown every time the application is launced from disk, this does not occur when launching from memory.
 
 > When in the Search tab, there is no way to dismiss the keyboard other than quitting the application.
