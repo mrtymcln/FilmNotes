@@ -15,7 +15,7 @@ struct ItemSelectionView : View {
             VStack {
                 List() {
                     
-                    Section(header: Text("ALL ITEMS") )
+                    Section(header: Text("All rolls") )
                     {
                         ForEach(self.dataSource.fetchedObjects) { item in
                             
@@ -55,7 +55,7 @@ struct ItemSelectionView : View {
                 }
             }
             .onAppear(perform: { self.onAppear() })
-            .navigationBarTitle(Text("Select Items"), displayMode: .large)
+            .navigationBarTitle(Text("Bulk Select"), displayMode: .large)
             .navigationBarItems(trailing: EditButton()
                                     .environment(\.editMode, self.$editMode)
             )

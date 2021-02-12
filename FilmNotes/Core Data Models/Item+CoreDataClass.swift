@@ -61,7 +61,7 @@ public class Item: NSManagedObject, Identifiable {
         let datasource = CoreDataDataSource<Item>()
         return datasource.fetch()
     }
-
+    
     #if DEBUG
     class func preview() -> Item {
         

@@ -7,28 +7,66 @@ struct AttributeFormView: View {
     
     var body: some View {
         
-            Section(header: Text("EXPOSURE_ATTRIBUTE")) {
-                
-                VStack {
-                    HStack {
-                        Text("Description")
-                            .foregroundColor(.gray)
-                        Spacer()
-                    }
-                    TextField("Dog", text: self.$textName)
-                        .textFieldStyle(RoundedBorderTextFieldStyle())
+        Section(header: Text("")) {
+            VStack {
+                HStack {
+                    Text("Order")
+                        .foregroundColor(.gray)
+                    Spacer()
                 }
-                
-                VStack {
-                    HStack {
-                        Text("Order")
-                            .foregroundColor(.gray)
-                        Spacer()
-                    }
-                    TextField("", text: self.$textOrder)
-                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                TextField("", text: self.$textOrder)
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
+            }
+            
+            VStack {
+                HStack {
+                    Text("Date taken").foregroundColor(.gray)
+                    DatePicker(selection: /*@START_MENU_TOKEN@*/.constant(Date())/*@END_MENU_TOKEN@*/, label: { Text("") })
                 }
             }
+        }
+        
+        Section(header: Text("")) {
+            VStack {
+                HStack {
+                    Text("Aperture")
+                        .foregroundColor(.gray)
+                    Spacer()
+                }
+                TextField("f/", text: self.$textName)
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
+            }
+            
+            VStack {
+                HStack {
+                    Text("Shutter speed")
+                        .foregroundColor(.gray)
+                    Spacer()
+                }
+                TextField("", text: self.$textName)
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
+            }
+            
+            VStack {
+                HStack {
+                    Text("Compensation")
+                        .foregroundColor(.gray)
+                    Spacer()
+                }
+                TextField("", text: self.$textName)
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
+            }
+            
+            VStack {
+                HStack {
+                    Text("Notes")
+                        .foregroundColor(.gray)
+                    Spacer()
+                }
+                TextField("", text: self.$textName)
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
+            }
+        }
     }
 }
 
@@ -38,7 +76,7 @@ struct AttributeFormView_Previews: PreviewProvider {
         NavigationView {
             Form {
                 AttributeFormView(textName: .constant(""), textOrder: .constant(""))
-           }
+            }
         }
     }
 }

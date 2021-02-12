@@ -1,4 +1,4 @@
-# FilmNotes version 0.1 as of 05.01.21
+# FilmNotes version 0.2 as of 12.02.21
 
 **FilmNotes** is an app for cataloguing your analouge film photography. Add a new **Roll (item)**, and enter notes for each **Exposure (attribute)** you take.
 
@@ -11,9 +11,7 @@ A TabView is used to display and edit the same CoreData database in several ways
 > A list view of Rolls (items) and Exposures (attributes) with editing capability.
 
 **✨ Tab 1 to-do**
-> Add input fields for box speed, colour/greyscale, date/time, aperture, and shutter speed.
-
-> Connect all input fields to the CoreData model.
+> Connect all input fields to their own Items and Attributes in the CoreData model.
 
 > Limit each Roll (item) to 36 Exposures (attributes). Once the Roll is filled, move it to the Shoe Box where it becomes uneditable.
 
@@ -31,9 +29,9 @@ A TabView is used to display and edit the same CoreData database in several ways
 
 
 **🚧 Known Issues**
-> Rolls with an identical Name are combined in the Shoe Box. They need to be seperated by Order.
+> Rolls with an identical Name are combined in the Shoe Box. They need to be seperated by Order or Date/Time.
 
-> The NavigationBarTitle shows ghosting from the previous NavigationBarTitle. Fixed by using the In-line style rather than Large style.
+> The NavigationBarTitle shows ghosting from the previous NavigationBarTitle. Seemingly fixed by using the In-line style rather than Large style.
 
 > When reordering rows, the first Roll or Exposure in the list becomes Order 0.
 

@@ -3,9 +3,9 @@ import SwiftUI
 struct ItemEditView : View {
     
     @State private var editMode: EditMode = .inactive
-
+    
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
-
+    
     var item: Item
     
     @State var textFilmStock: String = ""
@@ -20,7 +20,7 @@ struct ItemEditView : View {
             ItemFormView(textFilmStock: self.$textFilmStock,
                          textOrder: self.$textOrder,
                          editMode: self.$editMode)
-             
+            
             Section(header: Text("EXPOSURES_ATTRIBUTES")) {
                 ForEach(dataSource.loadDataSource(relatedTo: item)) { attribute in
                     
@@ -28,7 +28,7 @@ struct ItemEditView : View {
                         AttributeListCell(name: attribute.name, order: attribute.order)
                     } else {
                         NavigationLink(destination: AttributeEditView(attribute: attribute))
-                        { AttributeListCell(name: attribute.name, order: attribute.order) }
+                            { AttributeListCell(name: attribute.name, order: attribute.order) }
                     }
                 }
                 .onMove(perform: self.dataSource.move)
@@ -39,14 +39,14 @@ struct ItemEditView : View {
         .navigationBarTitle(Text("\(self.editMode == .active ? "Edit" : "View") Roll"),
                             displayMode: .inline)
         .navigationBarItems(trailing:
-            HStack {
-                EditSaveDoneButton(editAction: { self.editMode = .active },
-                                   saveAction: { self.saveAction() },
-                                   doneAction: { self.editMode = .inactive },
-                                   dirty: self.dirty() )
-                    .padding()
-                AddButton(destination: AttributeAddView(item: item))
-            }
+                                HStack {
+                                    EditSaveDoneButton(editAction: { self.editMode = .active },
+                                                       saveAction: { self.saveAction() },
+                                                       doneAction: { self.editMode = .inactive },
+                                                       dirty: self.dirty() )
+                                        .padding()
+                                    AddButton(destination: AttributeAddView(item: item))
+                                }
         )
         .environment(\.editMode, self.$editMode)
     }

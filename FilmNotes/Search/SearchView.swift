@@ -13,7 +13,7 @@ struct SearchView: View {
             VStack {
                 SearchBar(text: $searchText, predicate: $searchPredicate)
                 List {
-                    Section(header: Text("EXPOSURES CONTAINING \(self.searchText)"))
+                    Section(header: Text("Exposures containing \(self.searchText)"))
                     {
                         ForEach(self.dataSource.loadDataSource(predicate: self.searchPredicate)) { attribute in
                             

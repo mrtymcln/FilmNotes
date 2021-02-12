@@ -14,9 +14,9 @@ struct AttributeAddView: View {
         Form {
             AttributeFormView(textName: self.$textExposureDescription, textOrder: self.$textOrder)
         }
-            .onAppear(perform: { self.onAppear() })
-            .navigationBarTitle(Text("Add Exposure"), displayMode: .inline)
-            .navigationBarItems(trailing: Button(action:{ self.saveAction() }) { Text("Save") }.disabled(!self.dirty()) )
+        .onAppear(perform: { self.onAppear() })
+        .navigationBarTitle(Text("Add Exposure"), displayMode: .inline)
+        .navigationBarItems(trailing: Button(action:{ self.saveAction() }) { Text("Save") }.disabled(!self.dirty()) )
     }
     
     func onAppear() {
